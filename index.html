@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster AI - Smart Self-Assessment & Quiz Generator</title>
+    
+    
+    <meta name="description" content="QuizMaster AI is a premium interactive learning platform. Generate quizzes from notes using Gemini AI, track your progress, view history, and climb the leaderboard.">
+    <meta name="keywords" content="quiz, AI quiz generator, education, self-assessment, study notes, learning tool, Gemini API">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <div class="app-container">
+        
+        <header class="app-header">
+            <div class="nav-brand">
+                <a href="#/home" class="logo-link">
+                    <span class="logo-icon"><i data-lucide="brain-circuit"></i></span>
+                    <span class="logo-text">QuizMaster <span class="text-accent">AI</span></span>
+                </a>
+            </div>
+            
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <nav class="app-nav" id="appNav">
+                
+                <a href="#/home" class="nav-item active" data-route="home">
+                    <i data-lucide="home"></i> <span>Home</span>
+                </a>
+                <a href="#/dashboard" class="nav-item" data-route="dashboard">
+                    <i data-lucide="layout-dashboard"></i> <span>Dashboard</span>
+                </a>
+                <a href="#/upload" class="nav-item" data-route="upload">
+                    <i data-lucide="sparkles"></i> <span>AI Generator</span>
+                </a>
+                <a href="#/leaderboard" class="nav-item" data-route="leaderboard">
+                    <i data-lucide="trophy"></i> <span>Leaderboard</span>
+                </a>
+                <a href="#/history" class="nav-item" data-route="history">
+                    <i data-lucide="history"></i> <span>History</span>
+                </a>
+                <a href="#/profile" class="nav-item" data-route="profile">
+                    <i data-lucide="user"></i> <span>Profile</span>
+                </a>
+                <a href="#/contact" class="nav-item" data-route="contact">
+                    <i data-lucide="help-circle"></i> <span>Support</span>
+                </a>
+                
+                
+                <div class="nav-auth-group" id="navAuthGroup">
+                    <a href="#/login" class="btn btn-outline btn-sm">Login</a>
+                    <a href="#/register" class="btn btn-primary btn-sm">Sign Up</a>
+                </div>
+            </nav>
+        </header>
+
+        
+        <main class="app-main" id="app">
+            
+            <div class="loading-screen">
+                <div class="spinner"></div>
+                <p>Initializing QuizMaster AI...</p>
+            </div>
+        </main>
+
+        
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>&copy; 2026 QuizMaster AI. Engineered for Excellence.</p>
+                <div class="footer-links">
+                    <a href="#/contact">Support</a>
+                    <a href="#/home">Privacy Policy</a>
+                    <a href="#/home">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <div id="toastContainer" class="toast-container"></div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
